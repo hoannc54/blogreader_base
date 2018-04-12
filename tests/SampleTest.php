@@ -5,7 +5,10 @@ class SampleTest extends TestCase
 {
 	public function testSampleFunction()
 	{
-		$sample = new \Dok123\Sample\Sample();
-		$this->assertTrue( $sample->sample_function( 1));
+       $result=  preg_replace('/(http|https):\/\//', '', 'https://vuhavan.wordpress.com/');
+       echo $result; die();
+       $result = array_intersect_key(array('a' => 1, 'b' => 3, 'c' => ['x','y']),
+            array_flip(array('a', 'c', 'd')));
+       print_r($result);
 	}
 }
